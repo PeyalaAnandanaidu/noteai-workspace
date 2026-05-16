@@ -15,24 +15,7 @@ Users can create, organize, and share notes with AI-generated summaries, real-ti
 - **Backend:** [https://your-app.onrender.com](https://your-app.onrender.com)
 
 
----
 
-## 🏗️ Architecture
-
-```
-┌─────────────────────┐   HTTPS/JWT    ┌──────────────────────┐
-│     Frontend        │ ◄────────────► │      Backend         │
-│  React + Vite + TS  │                │  Node.js + Express   │
-│     (Vercel)        │   Socket.io    │     (Render)         │
-└─────────────────────┘ ◄────────────► └──────────┬───────────┘
-                                                   │
-                                       ┌───────────▼──────────┐
-                                       │   MongoDB Atlas      │
-                                       │   + Groq AI API      │
-                                       └──────────────────────┘
-```
-
----
 
 ## 🛠️ Tech Stack
 
@@ -46,44 +29,6 @@ Users can create, organize, and share notes with AI-generated summaries, real-ti
 | Real-time | Socket.io (WebSockets) |
 | Authentication | JWT + bcryptjs (12 salt rounds) |
 | Validation | Zod (backend), React Hook Form (frontend) |
-
----
-
-## 📁 Folder Structure
-
-```
-├── frontend/
-│   └── src/
-│       ├── components/         # Reusable UI components (shadcn/ui)
-│       │   ├── ui/             # Button, Card, Badge, Skeleton, etc.
-│       │   └── common/         # MarkdownToolbar, CollaborationBar, etc.
-│       ├── features/           # Feature-based hooks
-│       │   ├── notes/hooks/    # useNotes, useNote, useUpdateNote
-│       │   ├── ai/hooks/       # useGenerateSummary
-│       │   └── dashboard/hooks/# useDashboard
-│       ├── hooks/              # Shared hooks (useDebounce, useCollaboration)
-│       ├── pages/              # Route-level page components
-│       ├── layouts/            # AppLayout, AuthLayout
-│       ├── services/           # Axios API service layer
-│       ├── store/              # Zustand auth store
-│       ├── config/             # Constants, API URLs
-│       ├── types/              # TypeScript interfaces
-│       ├── utils/              # Helper functions
-│       └── routes/             # React Router config
-│
-└── backend/
-    └── src/
-        ├── modules/
-        │   ├── auth/           # Signup, login, JWT
-        │   ├── notes/          # CRUD, share, archive
-        │   ├── ai/             # Groq summary generation
-        │   └── dashboard/      # Aggregation & stats
-        ├── socket/             # Socket.io real-time handlers
-        ├── middleware/         # Auth, error handler, validation
-        ├── models/            # Mongoose schemas (User, Note, AIUsage)
-        ├── config/            # DB connection, env validation
-        └── utils/             # Response helpers
-```
 
 ---
 
