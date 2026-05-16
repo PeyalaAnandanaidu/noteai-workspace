@@ -11,8 +11,8 @@ Users can create, organize, and share notes with AI-generated summaries, real-ti
 
 ## 🌐 Live Demo
 
-- **Frontend:** [https://your-app.vercel.app](https://your-app.vercel.app)
-- **Backend:** [https://your-app.onrender.com](https://your-app.onrender.com)
+- **Frontend:** https://noteai-workspace.vercel.app
+- **Backend:** https://noteai-backend-bbaw.onrender.com
 
 
 
@@ -112,7 +112,7 @@ Users can create, organize, and share notes with AI-generated summaries, real-ti
 ### 1. Clone the Repository
 
 ```bash
-git clone https://github.com/yourusername/noteai-workspace.git
+git clone https://github.com/PeyalaAnandanaidu/noteai-workspace.git
 cd noteai-workspace
 ```
 
@@ -424,26 +424,6 @@ aiusages: userId
 
 ---
 
-## 🚢 Deployment
-
-### Backend → Render
-
-1. Create **Web Service** on [render.com](https://render.com)
-2. Connect GitHub repo
-3. **Root Directory:** `backend`
-4. **Build Command:** `npm install && npm run build`
-5. **Start Command:** `node dist/app.js`
-6. Add all environment variables from `.env.example`
-
-### Frontend → Vercel
-
-1. Import repo on [vercel.com](https://vercel.com)
-2. **Root Directory:** `frontend`
-3. **Build Command:** `npm run build`
-4. Add `VITE_API_URL` pointing to Render backend URL
-5. Deploy
-
----
 
 ## 📸 Screenshots
 
@@ -464,6 +444,6 @@ aiusages: userId
 ## 👨‍💻 Author
 
 **PEYALA ANANDA NAIDU**
-- GitHub: [@yourusername](https://github.com/yourusername)
-- Email: your.email@example.com
+- GitHub: @PeyalaAnandanaidu
+- Email: anandanaidupeyala@gmail.com
 
