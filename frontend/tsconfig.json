@@ -1,0 +1,11 @@
+// tsconfig.json ← CLEAN VERSION
+{
+  "compilerOptions": {
+    "types": ["vite/client"]
+  },
+  "files": [],
+  "references": [
+    { "path": "./tsconfig.app.json" },
+    { "path": "./tsconfig.node.json" }
+  ]
+}
