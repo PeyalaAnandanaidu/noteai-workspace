@@ -1,6 +1,6 @@
-// tsconfig.json ← CLEAN VERSION
 {
   "compilerOptions": {
+    "ignoreDeprecations": "6.0",
     "types": ["vite/client"]
   },
   "files": [],
